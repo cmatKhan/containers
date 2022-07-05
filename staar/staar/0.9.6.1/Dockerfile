@@ -47,6 +47,5 @@ RUN R -e "install.packages(c( \
 # install STAAR dependencies from bioconductor
 RUN R -e "BiocManager::install('GENESIS', dependencies=TRUE)" 
 # install STAAR
-RUN R -e "remotes::install_github('xihaoli/STAAR', dependencies=TRUE)"
-
+RUN R -e "remotes::install_github('xihaoli/STAAR@v0.9.6.1', dependencies=TRUE)"
 USER biodocker
